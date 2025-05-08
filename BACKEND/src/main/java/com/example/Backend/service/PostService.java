@@ -50,13 +50,7 @@ public class PostService {
         return postRepository.findByUserIdOrderByCreatedAtDesc(userId);
     }
 
-    public Post updatePost(String id, Post postDetails) {
-        Post post = getPostById(id);
-        post.setDescription(postDetails.getDescription());
-        post.setMediaUrls(postDetails.getMediaUrls());
-        post.setUpdatedAt(new Date());
-        return postRepository.save(post);
-    }
+
 
     public void deletePost(String id) {
         Post post = getPostById(id);
