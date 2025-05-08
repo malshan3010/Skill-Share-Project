@@ -50,12 +50,14 @@ public class PostService {
         return postRepository.findByUserIdOrderByCreatedAtDesc(userId);
     }
 
-
-
-    public void deletePost(String id) {
+    public Post updatePost(String id, Post postDetails) {
         Post post = getPostById(id);
-        postRepository.delete(post);
+        post.setDescription(postDetails.getDescription());
+        post.setMediaUrls(postDetails.getMediaUrls());
+        post.setUpdatedAt(new Date());
+        return postRepository.save(post);
     }
+
 
     public Post addComment(String postId, Comment comment) {
         Post post = getPostById(postId);
