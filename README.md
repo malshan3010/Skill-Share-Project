@@ -1,41 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill-Sharing & Learning Platform - README</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Skill-Sharing & Learning Platform</h1>
-        <p>This platform enables users to share and learn various skills like coding, cooking, photography, and DIY crafts.</p>
-    </header>
+# Skill-Sharing & Learning Platform
 
-    <section>
-        <h2>Key Features</h2>
-        <ul>
-            <li>Skill Posts: Users can share their skills through photos or videos.</li>
-            <li>Learning Progress Updates: Users can track and share their learning journey.</li>
-            <li>Learning Plans: Users can create and share personalized learning plans.</li>
-            <li>Interactivity: Users can like and comment on others' posts.</li>
-            <li>User Profiles: Each user has a profile to showcase their skills and progress.</li>
-        </ul>
-    </section>
+This platform enables users to share and learn various skills like coding, cooking, photography, and DIY crafts.
 
-    <section>
-        <h2>Tech Stack</h2>
-        <ul>
-            <li><strong>Backend:</strong> Spring Boot, Java, MySQL</li>
-            <li><strong>Frontend:</strong> React, JavaScript, HTML, CSS</li>
-            <li><strong>Version Control:</strong> Git, GitHub</li>
-            <li><strong>IDE:</strong> VS Code, IntelliJ IDEA</li>
-        </ul>
-    </section>
+## Key Features
 
-    <section>
-        <h2>Project Structure</h2>
-        <pre>
+* **Skill Posts:** Users can share their skills through photos or videos.
+* **Learning Progress Updates:** Users can track and share their learning journey.
+* **Learning Plans:** Users can create and share personalized learning plans.
+* **Interactivity:** Users can like and comment on others' posts.
+* **User Profiles:** Each user has a profile to showcase their skills and progress.
+
+## Tech Stack
+
+* **Backend:** Spring Boot, Java, MongoDB
+* **Frontend:** React, JavaScript, HTML, CSS
+* **Version Control:** Git, GitHub
+* **IDE:** VS Code, IntelliJ IDEA
+
+## Project Structure
+
+```
 📁 Skill-Sharing-Platform/
 ├── 📁 backend/             # Spring Boot Backend
 │   ├── 📁 src/
@@ -45,70 +29,69 @@
 │   ├── 📁 src/
 │   └── 📄 package.json     # Frontend Dependencies
 └── 📄 README.md            # Project Documentation
-        </pre>
-    </section>
+```
 
-    <section>
-        <h2>Setup Instructions</h2>
-        <h3>Prerequisites</h3>
-        <ul>
-            <li>Java 17+</li>
-            <li>Node.js 18+</li>
-            <li>MySQL Database</li>
-            <li>Git Bash (or any terminal of your choice)</li>
-        </ul>
+## Setup Instructions
 
-        <h3>Backend Setup (Spring Boot)</h3>
-        <ol>
-            <li>Clone the repository:</li>
-            <pre><code>git clone &lt;repository_url&gt;<br>cd backend</code></pre>
-            <li>Configure the database connection in <code>application.properties</code>.</li>
-            <li>Build and run the application:</li>
-            <pre><code>mvn spring-boot:run</code></pre>
-        </ol>
+### Prerequisites
 
-        <h3>Frontend Setup (React)</h3>
-        <ol>
-            <li>Navigate to the frontend directory:</li>
-            <pre><code>cd ../frontend</code></pre>
-            <li>Install dependencies:</li>
-            <pre><code>npm install</code></pre>
-            <li>Start the React application:</li>
-            <pre><code>npm start</code></pre>
-        </ol>
-    </section>
+* Java 17+
+* Node.js 18+
+* MongoDB Database
+* Git Bash (or any terminal of your choice)
 
-    <section>
-        <h2>Usage</h2>
-        <ul>
-            <li>Post a Skill: Share your skills through text, images, or videos.</li>
-            <li>Update Learning Progress: Track and share your learning journey.</li>
-            <li>Plan Your Learning: Create and share personalized learning plans.</li>
-            <li>Engage with Others: Like and comment on posts.</li>
-        </ul>
-    </section>
+### Backend Setup (Spring Boot)
 
-    <section>
-        <h2>Future Enhancements</h2>
-        <ul>
-            <li>Notifications for new comments or likes.</li>
-            <li>Personalized skill recommendations.</li>
-            <li>Progress analytics and insights.</li>
-        </ul>
-    </section>
+1. Clone the repository:
 
-    <section>
-        <h2>Contributing</h2>
-        <p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
-    </section>
+   ```bash
+   git clone <repository_url>
+   cd backend
+   ```
+2. Configure the database connection in `application.properties`.
+3. Build and run the application:
 
-    <section>
-        <h2>License</h2>
-        <p>This project is licensed under the MIT License.</p>
-    </section>
+   ```bash
+   mvn spring-boot:run
+   ```
 
-    <footer>
-        <p>Happy Learning! 🚀</p>
-    </footer>
-</body>
-</html>
+### Frontend Setup (React)
+
+1. Navigate to the frontend directory:
+
+   ```bash
+   cd ../frontend
+   ```
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+3. Start the React application:
+
+   ```bash
+   npm start run dev
+   ```
+
+## Usage
+
+* **Post a Skill:** Share your skills through text, images, or videos.
+* **Update Learning Progress:** Track and share your learning journey.
+* **Plan Your Learning:** Create and share personalized learning plans.
+* **Engage with Others:** Like and comment on posts.
+
+## Future Enhancements
+
+* Notifications for new comments or likes.
+* Personalized skill recommendations.
+* Progress analytics and insights.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+##
+
+---
+
+Happy Learning! 🚀
