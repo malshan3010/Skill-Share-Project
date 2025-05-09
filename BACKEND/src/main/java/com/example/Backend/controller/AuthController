@@ -67,6 +67,6 @@ public class AuthController {
         //here we just return a success message for testing
         Map<String, String> response = new HashMap<>();
         response.put("message", "Token is valid");
-        return ResponseEntity.ok(response);
+        return ResponseEntity.ok(resp
     }
 }
