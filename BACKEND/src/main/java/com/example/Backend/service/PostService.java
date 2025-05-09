@@ -57,7 +57,11 @@ public class PostService {
         post.setUpdatedAt(new Date());
         return postRepository.save(post);
     }
-
+    
+    public void deletePost(String id) {
+        Post post = getPostById(id);
+        postRepository.delete(post);
+    }
 
     public Post addComment(String postId, Comment comment) {
         Post post = getPostById(postId);
