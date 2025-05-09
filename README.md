@@ -70,7 +70,7 @@ This platform enables users to share and learn various skills like coding, cooki
 3. Start the React application:
 
    ```bash
-   npm start run dev
+   npm run dev
    ```
 
 ## Usage
